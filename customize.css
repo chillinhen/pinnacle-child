@@ -1,0 +1,96 @@
+/***n Local Fonts */
+html, body, button, input, select, textarea {
+    font-family:'Ubuntu-Regular', Arial,Helvetica, sans-serif;
+ }
+ h1,h2,h3,h4, legend, .number, .widgettitle, [class*="menu-item"]>a{
+    font-family: 'TitilliumWeb-Regular', Arial,Helvetica, sans-serif !important;
+ }
+/*** Events calendar ***/
+#tribe-events-content.tribe-events-single,
+#tribe-events-content-wrapper{
+    padding:2em;
+}
+.tribe-events-single .tribe-events-event-image{
+    margin:0 -2em 1.25em -2em;
+}
+#tribe-geo-results h2.tribe-events-page-title, h2.tribe-events-page-title{
+    font-weight:400 !important;
+}
+.tribe-events-list .tribe-events-loop .tribe-event-featured,
+.tribe-events-list-widget .tribe-event-featured,
+.tribe-bar-submit input[type=submit],
+.tribe-events-button
+[id*="tribe-events-daynum"]
+{
+    background:#2466a8 !important;
+}
+[id*="tribe-events-event"].tribe-event-featured{
+    background:#7EA0C5 !important;
+}
+[id*="tribe-events-tooltip"].tribe-event-featured{
+    background:white !important;
+}
+.tribe-events-calendar thead th{
+    background-color:#000;
+}
+
+.tribe-events-calendar td.tribe-events-past div[id*=tribe-events-daynum-],
+.tribe-events-calendar td.tribe-events-past div[id*=tribe-events-daynum-]>a{
+    color:white !important;
+}
+.tribe-events-calendar div[id*=tribe-events-daynum-] a,
+.tribe-events-calendar td.tribe-events-past div[id*=tribe-events-daynum-]>a{
+    background:transparent !important;
+}
+#tribe-events-content .tribe-events-tooltip h4{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    color:#2466a8;
+}
+.tribe-list-widget{
+    padding:0;
+}
+.tribe-events-list-widget .tribe-events-list-widget-events{
+    border-bottom:1px solid #ccc;
+    padding-bottom:1.25rem;
+}
+.tribe-events-list-widget .tribe-event-featured{border-bottom:0;}
+.tribe-events-event-meta dd.url{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+}
+.elastic-video {
+    position: relative;
+    padding-bottom: 55%; /* ratio width/height in % Bsp. (450 ÷ 500 = 0.9 = 90%) */
+    padding-top: 15px;
+    height: 0;
+    overflow: hidden;
+}
+.elastic-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;/** If Iframe containes a googlmap and is container is 100% width*/
+}
+@media only screen and (min-device-width: 992px) {
+    .footercredits {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footercredits p{order:1}
+    .footernav {order:2}
+}
+.revoke-cookies{
+    font-size: 10px;
+    order:3;
+    padding:4px 0;
+    line-height: 20px;
+}
